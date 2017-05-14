@@ -1,0 +1,63 @@
+// Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700)
+@import url(https://fonts.googleapis.com/css?family=Roboto)
+
+// Font Variables
+$roboto: 'Roboto', sans-serif
+$open-sans: 'Open Sans', sans-serif
+
+html
+  @include cover-background('https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg')
+
+.panel-login
+  position: fixed
+  top: 0px
+  left: 0px
+  bottom: 0px
+  right: 0px
+  margin: auto
+  height: 500px
+  border-radius: 4px
+  background-color: rgba(0, 0, 0, 0.78)
+  color: #fff
+  font-family: $open-sans
+  @media only screen and (max-width: 766px)
+    height: 100vh
+    padding-top: 10vh
+  &__header
+    padding: 10px
+    font-size: 12px
+    font-weight: 200
+    p
+      padding-top: 10px
+  &__invite-buttons
+    margin-top: 25px
+  &__divider
+    margin: 10px 0px
+    font-size: 12px
+    font-weight: 200
+  &__divider
+    width: 200px
+    margin: 10px auto
+    .divider__hr
+      position: relative
+      overflow: hidden
+      span
+        display: inline-block
+        vertical-align: baseline
+        zoom: 1
+        *display: inline
+        *vertical-align: auto
+        position: relative
+        padding: 0 10px
+        &:before, &:after
+          content: ''
+          display: block
+          width: 1000px
+          position: absolute
+          top: 0.73em
+          border-top: 1px solid #fff
+        &:before
+          right: 100%
+        &:after
+          left: 100%

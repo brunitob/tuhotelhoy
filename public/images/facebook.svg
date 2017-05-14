@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212" height="42" viewBox="0 0 212 42">
+    <defs>
+        <rect id="b" width="208" height="36" rx="2"/>
+        <filter id="a" width="105.8%" height="133.3%" x="-2.9%" y="-11.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="1"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(2 2)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#2B2B2B" xlink:href="#b"/>
+        </g>
+        <text fill="#FFF" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" letter-spacing=".5" transform="translate(2 2)">
+            <tspan x="76" y="24">FACEBOOK</tspan>
+        </text>
+        <path fill="#FFF" d="M56.546 28h-7.663a.883.883 0 0 1-.883-.883V12.883c0-.488.395-.883.883-.883h14.234c.488 0 .883.395.883.883v14.234a.883.883 0 0 1-.883.883H59.04v-6.196h2.08l.31-2.415h-2.39v-1.541c0-.7.194-1.176 1.196-1.176h1.28v-2.16c-.222-.03-.981-.095-1.864-.095-1.844 0-3.106 1.125-3.106 3.191v1.781h-2.085v2.415h2.085V28z"/>
+    </g>
+</svg>
