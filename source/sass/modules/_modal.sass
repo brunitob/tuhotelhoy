@@ -1,0 +1,38 @@
+// setting all properties for THH
+.modal-content
+  -webkit-border-radius: 0px !important
+  -moz-border-radius: 0px !important
+  border-radius: 0px !important
+
+.modal-dialog
+  margin-top: 0
+  margin-bottom: 0
+  height: 100vh
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+
+.modal
+  &.fade .modal-dialog
+    -webkit-transform: translate(0, -100%)
+    transform: translate(0, -100%)
+  &.in .modal-dialog
+    -webkit-transform: translate(0, 0)
+    transform: translate(0, 0)
+
+.modal
+  &__header
+    padding: 15px
+    font-size: 25px
+  &__footer
+    padding-top: 10px

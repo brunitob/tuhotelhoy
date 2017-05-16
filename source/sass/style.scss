@@ -6,12 +6,15 @@
 $font-family-base: 'Roboto', sans-serif;
 @import 'bootstrap/_bootstrap';
 @import "scss/font-awesome";
+@import "mixins";
 
 /*========================================================
 ==================== CUSTOM VARIABLES ====================
 ========================================================*/
 
 @import 'bootstrap/_variables';
+@import "fonts";
+
 
 /*========================================================
 ====================== CUSTOM STYLES =====================
@@ -19,6 +22,9 @@ $font-family-base: 'Roboto', sans-serif;
 
 @import 'modules/_login';
 @import 'modules/_buttons';
+@import 'modules/_modal';
+@import 'modules/_form';
+
 
 /*========================================================
 ================ IMPORT RESPONSIVE STYLES ================

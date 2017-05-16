@@ -63,6 +63,7 @@ gulp.task('watch', function() {
 	gulp.watch([
 		'source/sass/style.scss',
 		'source/sass/responsive.scss',
+		'source/sass/_fonts.sass',
 		'source/sass/modules/*',
 		'source/sass/bootstrap/_variables.scss'
 	], ['sass']);

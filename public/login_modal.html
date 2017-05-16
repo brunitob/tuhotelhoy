@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TuHotelHoy</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+	</head>
+	<body>
+		<div class="row">
+			<div class="panel-login col-md-3 col-sm-6 col-xs-12">
+				<div class="panel-wrapper text-center">
+					<div class="panel-login__header">
+						<span class="icon-Logo panel-login__logo"></span>
+						<p>Hoteles Last Minute</p>
+					</div>
+					<div class="panel-login__account-buttons">
+						<div class="">
+							<a class="btn thh-button thh-button--login" href="#" role="button" data-toggle="modal" data-target=".modal-thh-exist">Cuenta ya existe</a>
+						</div>
+						<div class="">
+							<a class="btn thh-button thh-button--login" href="#" role="button" data-toggle="modal" data-target=".modal-thh-notexist">Cuenta no existe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade modal-thh-exist" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog modal-sm" role="document">
+		    <div class="modal-content">
+		      <div class="text-right modal__header">
+						<button type="button" class="" data-dismiss="modal" aria-label="Close"><span class="icon-Cross"></span></button>
+		      </div>
+					<div class="text-center">
+						<p>¡Esta cuenta ya existe!</p>
+						<a class="btn thh-button thh-button--modal" href="#" role="button">Olvidé mi contraseña</a>
+						<a class="btn thh-button thh-button--modal" href="#" role="button">Seguir como invitado</a>
+					</div>
+					<div class="modal__footer">
+					</div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal fade modal-thh-notexist" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+		  <div class="modal-dialog modal-sm" role="document">
+		    <div class="modal-content">
+		      <div class="text-right modal__header">
+						<button type="button" class="" data-dismiss="modal" aria-label="Close"><span class="icon-Cross"></span></button>
+		      </div>
+					<div class="text-center">
+						<p>Ups! esta cuenta no existe</p>
+						<a class="btn thh-button thh-button--modal" href="#" role="button">Crear cuenta</a>
+						<a class="btn thh-button thh-button--modal" href="#" role="button">Cancelar</a>
+					</div>
+					<div class="modal__footer">
+					</div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>
