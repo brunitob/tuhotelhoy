@@ -1,12 +1,4 @@
-// Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400italic,700italic,400,700)
-@import url(https://fonts.googleapis.com/css?family=Roboto)
-
-// Font Variables
-$roboto: 'Roboto', sans-serif
-$open-sans: 'Open Sans', sans-serif
-
-html
+.login-screen
   @include cover-background('https://static.pexels.com/photos/1139/black-and-white-city-skyline-buildings.jpg')
 
 .panel-login
@@ -16,14 +8,13 @@ html
   bottom: 0px
   right: 0px
   margin: auto
-  height: 500px
+  height: 600px
   border-radius: 4px
   background-color: rgba(0, 0, 0, 0.78)
   color: #fff
-  font-family: $open-sans
+
   @media only screen and (max-width: 766px)
     height: 100vh
-    padding-top: 10vh
   &__header
     padding: 10px
     font-size: 12px
@@ -42,13 +33,44 @@ html
     font-weight: 200
   &__wrapper
     padding: 0px 10px
+  &__pass
+    padding: 30px 40px
+    color: #fff
+    a
+      color: $thh-green
   &__tac
     padding: 10px 40px
     color: #fff
     a
       color: $thh-green
-  &__button-create
-    
+  &__footer
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+  &__back
+    // position: absolute
+    font-size: 20px
+    color: $thh-green
+    margin-top: 10px
+    a
+      font-size: 20px
+      color: $thh-green
+      &:hover
+        text-decoration: none
+    p
+      font-size: 14px
+      color: #fff
+  &__mobile-navbar
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+
+  &__navbar-title
+    line-height: 43px
+    padding-left: 20px
+  &____message
+    padding: 40px 0px
+
   &__divider
     width: 200px
     margin: 10px auto
@@ -74,3 +96,7 @@ html
           right: 100%
         &:after
           left: 100%
+
+
+.panel-wrapper
+  height: 100%

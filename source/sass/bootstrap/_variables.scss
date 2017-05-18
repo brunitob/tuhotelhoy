@@ -55,7 +55,7 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 // Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400italic,700italic,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 // Font Variables
@@ -63,7 +63,8 @@ $roboto: 'Roboto', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
 
 body {
-  font-family: $open-sans
+  font-family: $open-sans;
+  font-weight: 200;
 }
 
 $font-family-sans-serif:  $roboto, $open-sans, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
