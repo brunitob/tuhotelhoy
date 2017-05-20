@@ -7,6 +7,8 @@ $error: #f7406b
 	&--edit
 		width: 300px
 		background: none
+	&--card
+		max-width: 600px
 
 
 // Material form
@@ -14,10 +16,12 @@ $error: #f7406b
 	position: relative
 	margin-top: 16px
 	margin-bottom: 26px
-	&--slim
-		position: relative
-		margin-top: 0px
-		margin-bottom: 0px
+	&__float-icon
+		position: absolute
+		bottom: 5px
+		font-size: 30px
+		color: $thh-green
+		right: 5px
 
 	&:after
 		height: 2px
@@ -92,6 +96,8 @@ input, textarea, select
 			box-shadow: none
 			background: none
 
+.material-form__item--slim
+	margin: 0px
 // Material button
 .butn
 	border: none
@@ -124,6 +130,8 @@ input, textarea, select
 	&.animate
 		animation: ripple .5s linear
 
+.no-padding
+	padding: 0px
 // animation effect
 @keyframes ripple
 	100%
