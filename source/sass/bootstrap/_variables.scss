@@ -5,6 +5,7 @@ $bootstrap-sass-asset-helper: false !default;
 // THH
 $thh-green: #50e3c2;
 $thh-darkgray: #2b2b2b;
+$thh-darkblue: #212121;
 
 
 @mixin cover-background($img-uri, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
@@ -14,6 +15,16 @@ $thh-darkgray: #2b2b2b;
   -o-background-size: cover;
   background-size: cover;
 }
+
+.navbar-default {
+  background-color: $thh-darkgray;
+  color: $thh-green !important;
+  font-size: 22px;
+  font-weight: 400;
+  border-color: $thh-darkblue;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  padding-left: 10px;
+  }
 
 //== Colors
 //
@@ -393,8 +404,8 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
+$navbar-default-color:             $thh-green !default;
+$navbar-default-bg:                $thh-darkblue !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links

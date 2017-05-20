@@ -1,0 +1,177 @@
+.details-screen
+  min-height: 500px
+  width: 100%
+  color: #fff
+  font-weight: 300
+  &--padtop
+    padding-top: 20px
+  &__cover
+    position: relative
+    height: 300px
+    width: 100%
+    display:inline-block
+    background: none
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 1)))
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%)
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%)
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 90%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 )hue-rotate()
+  &__img
+    position: relative
+    z-index: -1
+    display: block
+    object-fit: cover
+    position: absolute
+    height: 300px
+    width: 100%
+  &__title
+    font-size: 22px
+    font-weight: 500
+    padding: 10px 10px
+  &__about
+    font-size: 16px
+    font-weight: 500
+    padding: 10px 10px
+  &__description
+    padding: 10px 10px
+    .desc-title
+      font-size: 16px
+      font-weight: 500
+      margin-top: 10px
+  &__separator
+    width: 100%
+    height: 1px
+    background-color: #fff
+    margin: 15px 10px 15px 10px
+    &--slim
+      width: 100%
+      height: 1px
+      background-color: #fff
+      margin: 5px 0px
+  &__colapse
+    a
+      text-decoration: none
+      color: #fff
+  &__colapse-title
+    font-size: 22px
+    font-weight: 500
+    padding: 10px 10px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    span
+      color: $thh-green
+  &__colapse-descr
+    padding: 10px 10px
+
+.details-mobile
+  position: absolute
+  bottom: 0px
+  padding: 10px 10px
+  &__desc
+    padding: 10px 10px
+    .badge
+      background-color: #07374d
+      border-radius: 2px
+      font-weight: 300
+      margin-right: 15px
+  &__map
+    height: 100px
+    width: 100%
+  &__title
+    font-weight: 500
+    margin-right: 25px
+    padding: 0px 10px
+  &__container
+    padding-bottom: 50px
+  &__times
+    background-color: rgba(#000, 0.2)
+    border-top: 1px solid #fff
+    border-bottom: 1px solid #fff
+    &--first
+      background-color: #192129
+      border-bottom: 1px solid #fff
+    .side-box__time
+
+      .side-box__time-in
+        font-weight: 500
+        font-size: 16px
+
+      .side-box__time-out
+        font-weight: 300
+        font-size: 14px
+  &__colapse
+    border-bottom: 1px solid #fff
+    .details-screen__colapse
+      .details-screen__colapse-title
+        font-weight: 500
+        font-size: 16px
+      .details-screen__colapse-descr
+        font-weight: 300
+        font-size: 14px
+  &__main-button
+    background-color: $thh-green
+    height: 40px
+    position: fixed
+    bottom: 0px
+    color: #000
+    font-weight: 500
+    font-size: 18px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.side-box__time-in--middle
+  padding-top: 13px
+
+.text--green
+  color: $thh-green
+
+
+
+
+
+
+
+
+
+
+.side-box
+  background-color: rgba(#000000, 0.2)
+  border: 1px solid #fff
+  color: #fff
+  padding: 0px
+  font-size: 18px
+  font-weight: 500
+  &__price
+    font-size: 25px
+    font-weight: 500
+    padding: 10px 10px
+  &__separator
+    width: 100%
+    height: 1px
+    background-color: #fff
+    margin: 5px 0px
+
+  &__separator--dotted
+      border-top: 1px dotted #fff
+  &__time-out
+    font-size: 16px
+    font-weight: 300
+  &__time
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    padding: 10px
+  &__address
+    padding: 10px
+  &__button
+    padding: 0px 10px 10px 10px
+  &__map
+    height: 100px
+    width: 100%

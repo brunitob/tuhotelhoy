@@ -24,15 +24,6 @@ gulp.task("copyfiles", function() {
 
 });
 
-gulp.task('clean', function(cb) {
-	del([
-		'source/css/**/*',
-        'source/js/**/*',
-        'source/sass/**/*',
-        '!source/sass/*.scss',
-	], cb);
-});
-
 gulp.task('scripts', function() {
 	// App
 	gulp.src([

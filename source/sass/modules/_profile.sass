@@ -1,0 +1,114 @@
+.profile-screen
+  &__nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $thh-green
+    font-size: 20px
+    margin-top: 20px
+    &--title
+      margin-right: auto
+      color: #fff
+      font-size: 22px
+      padding-left: 20px
+  &__profile
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 100%
+    color: #fff
+    &--edit
+      background-color: #141a21
+      padding-bottom: 20px
+      margin-bottom: 20px
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+      width: 100%
+      color: #fff
+  &__cover
+    background-color: #141a21
+    height: 300px
+    width: 100%
+    &--reservations
+      background-color: #141a21
+      padding-bottom: 20px
+      margin-bottom: 20px
+
+      &--first
+        background-color: #141a21
+        padding-bottom: 20px
+
+  &__title
+    font-weight: 500
+    padding: 20px 0px
+    font-size: 20px
+  &__avatar
+    height: 100px
+    width: 100px
+    margin-top: 30px
+    border: 4px solid #fff
+    border-radius: 50px
+    &--edit
+      opacity: 0.6
+      height: 100px
+      width: 100px
+      margin-top: 30px
+      border: 4px solid #fff
+      border-radius: 50px
+      position: relative
+      &:hover
+        opacity: 0.9
+    &--cam
+      position: absolute
+      top: 28.5px
+      color: $thh-green
+      font-size: 35px
+      left: 28.5px
+
+  &__name
+    font-size: 16px
+    font-weight: 300
+    margin-top: 20px
+  &__mail
+    font-size: 16px
+    font-weight: 300
+  &__tac-page
+    font-size: 18px
+    font-weight: 300
+  &__tac
+    padding-top: 10px
+    a
+      color: $thh-green
+  &__item
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-direction: row
+    height: 70px
+    padding-bottom: 15px
+    border-bottom: 1px solid #4a4a4a
+    margin-bottom: 15px
+    &__description
+      margin-right: auto
+      color: #4a4a4a
+      padding-left: 20px
+      font-weight: 300
+      font-size: 14px
+      &--title
+        font-size: 18px
+        font-weight: 500
+    &__img
+      img
+        height: 70px
+    &__delete
+      a
+        font-size: 25px
+        color: $thh-green
+        &:hover
+          text-decoration: none
+  &__reservation_details
+    background-color: #192129
+    color: #fff
