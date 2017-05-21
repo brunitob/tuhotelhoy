@@ -14,6 +14,7 @@
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body class="profile-screen__reservation_details">
 	<div class="profile-screen">
 		<!-- navbar mobile  -->
@@ -25,43 +26,68 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel-login__wrapper">
-			<div class="form-wrapper">
-				<form action="" class="material-form">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="material-form__item">
-								<label for="name" class="material-form__label">Nombre</label>
-								<input type="text" required="required" id="name" class="material-form__field">
+		<!-- navbar desktop  -->
+		<nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand" href="#">
+						<span class="icon-LOGO"></span>
+					</a>
+				</div>
+				<div class="navbar__bb text-right">
+					<a href="#" class="hidden-lg"><span class="icon-Map_view"></span></a>
+					<a href="#"><span class="icon-User"></span></a>
+				</div>
+			</div>
+		</nav>
+		<div class="row details-screen--padtop3">
+			<div class="col-md-6 col-md-offset-3 col-xs-12">
+				<div class="hidden-xs hidden-sm details-screen__mintitle">
+					<p>Nombre del huesped</p>
+				</div>
+				<div class="panel-login__wrapper">
+					<div class="form-wrapper--card">
+						<form action="" class="material-form">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="material-form__item">
+										<label for="name" class="material-form__label">Nombre</label>
+										<input type="text" required="required" id="name" class="material-form__field">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="material-form__item">
-								<label for="surname" class="material-form__label">Apellido</label>
-								<input type="text" required="required" id="surname" class="material-form__field">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="material-form__item">
+										<label for="surname" class="material-form__label">Apellido</label>
+										<input type="text" required="required" id="surname" class="material-form__field">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="material-form__item">
-								<label for="email" class="material-form__label">E-mail</label>
-								<input type="email" required="required" id="email" class="material-form__field">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="material-form__item">
+										<label for="email" class="material-form__label">E-mail</label>
+										<input type="email" required="required" id="email" class="material-form__field">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
 
-				</form>
+						</form>
+					</div>
+					<div class="hidden-xs">
+						<a class="btn thh-button thh-button--login" href="#" role="button">Guardar</a>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
+	<div class="hidden-lg hidden-sm">
 		<a href="#">
-		<div class="details-mobile__main-button text-center">
-			Guardar
-		</div>
+			<div class="details-mobile__main-button text-center">
+				Guardar
+			</div>
 		</a>
-
 	</div>
 	<script src="js/app.js" charset="utf-8"></script>
 </body>
