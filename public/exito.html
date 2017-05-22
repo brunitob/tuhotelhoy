@@ -16,18 +16,33 @@
 </head>
 <body class="thanks-screen">
 	<div class="profile-screen">
-		<div class="profile-screen__cover--reservations">
+		<!-- navbar mobile  -->
+		<div class="profile-screen__cover--reservations--first hidden-lg">
 			<div class="container">
 				<div class="profile-screen__nav">
-					<span class="icon-Arrow_left"></span><span class="profile-screen__nav--title">Cyan Recoleta Hotel</span>
-					<span class=""></span>
+					<span class="icon-Arrow_left"></span>
+					<span class="profile-screen__nav--title">Cyan Recoleta Hotel</span>
 				</div>
 			</div>
 		</div>
+		<!-- navbar desktop  -->
+		<nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand" href="#">
+						<span class="icon-LOGO"></span>
+					</a>
+				</div>
+				<div class="navbar__bb text-right">
+					<a href="#" class="hidden-lg"><span class="icon-Map_view"></span></a>
+					<a href="#"><span class="icon-User"></span></a>
+				</div>
+			</div>
+		</nav>
 		<div class="container">
 			<div class="thanks-screen__box text-center">
 				<div class="thanks-screen__check">
-					<span class="icon-Circle_check"></span>
+					<span class="icon-Circle-check"></span>
 				</div>
 				<div class="thanks-screen__title">
 					¡Tu reserva se realizó con éxito!
@@ -37,11 +52,16 @@
 				</div>
 			</div>
 		</div>
-		<a href="#">
-		<div class="details-mobile__main-button text-center">
-			Ver mis reservas
+		<div class="hidden-xs text-center">
+			<a class="btn thh-button thh-button--login" href="#" role="button">Ver mis reservar</a>
 		</div>
-		</a>
+		<div class="hidden-lg hidden-sm">
+			<a href="#">
+				<div class="details-mobile__main-button text-center">
+					Ver mis reservar
+				</div>
+			</a>
+		</div>
 	</div>
 </body>
 
