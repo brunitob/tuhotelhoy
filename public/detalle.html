@@ -52,7 +52,7 @@
 							<span class="icon-pool"></span>
 							<span class="icon-internet"></span>
 							<span class="icon-parking"></span>
-							<span class="details-screen__all-amenities__number">+10</span>
+							<span class="details-screen__all-amenities__number"><a href="#">+10</a></span>
 						</div>
 					</div>
 					<div class="details-screen__separator"></div>
@@ -79,9 +79,9 @@
 					</div>
 					<div class="details-screen__separator"></div>
 					<div class="details-screen__colapse">
-						<a data-toggle="collapse" href="#option1" aria-expanded="true" aria-controls="option1">
+						<a id="collapse_button" data-toggle="collapse" href="#option1" aria-expanded="true" aria-controls="option1">
 							<div class="details-screen__colapse-title">
-								Cancelación / Prepago <span class="icon-Arrow_top"></span>
+								Cancelación / Prepago <span id="collapse_icon" class="icon-Arrow_top"></span>
 							</div>
 						</a>
 						<div class="collapse in details-screen__colapse-descr" id="option1">
@@ -90,9 +90,9 @@
 					</div>
 					<div class="details-screen__separator"></div>
 					<div class="details-screen__colapse">
-						<a data-toggle="collapse" href="#option2" aria-expanded="false" aria-controls="option2">
+						<a id="collapse_button1" data-toggle="collapse" href="#option2" aria-expanded="false" aria-controls="option2">
 							<div class="details-screen__colapse-title">
-								Servicios opcionales de habitación <span class="icon-Arrow_down"></span>
+								Servicios opcionales de habitación <span id="collapse_icon1" class="icon-Arrow_down"></span>
 							</div>
 						</a>
 						<div class="collapse details-screen__colapse-descr" id="option2">
@@ -101,9 +101,9 @@
 					</div>
 					<div class="details-screen__separator"></div>
 					<div class="details-screen__colapse">
-						<a data-toggle="collapse" href="#option3" aria-expanded="false" aria-controls="option3">
+						<a id="collapse_button2" data-toggle="collapse" href="#option3" aria-expanded="false" aria-controls="option3">
 							<div class="details-screen__colapse-title">
-								Servicios incluídos en la reserva <span class="icon-Arrow_down"></span>
+								Servicios incluídos en la reserva <span id="collapse_icon2" class="icon-Arrow_down"></span>
 							</div>
 						</a>
 						<div class="collapse details-screen__colapse-descr" id="option3">
@@ -148,5 +148,6 @@
 			</div>
 		</div>
 	</div>
+	<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>
