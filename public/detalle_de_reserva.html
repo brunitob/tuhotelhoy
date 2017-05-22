@@ -17,7 +17,8 @@
 
 <body class="profile-screen__reservation_details">
 	<div class="profile-screen">
-		<div class="profile-screen__cover--reservations--first">
+		<!-- navbar mobile  -->
+		<div class="profile-screen__cover--reservations--first hidden-lg">
 			<div class="container">
 				<div class="profile-screen__nav">
 					<span class="icon-Arrow_left"></span>
@@ -25,53 +26,133 @@
 				</div>
 			</div>
 		</div>
-		<div class="">
-			<div class="">
-				<div class="profile-screen__the-times">
-					<div class="details-mobile__times--first">
-						<div class="side-box__time">
-							<div class="side-box__time-in">
-								Entrada
+		<!-- navbar desktop  -->
+		<nav class="navbar navbar-default navbar-fixed-top hidden-xs hidden-sm">
+			<div class="container">
+				<div class="navbar-header pull-left">
+					<a class="navbar-brand" href="#">
+						<span class="icon-LOGO"></span>
+					</a>
+				</div>
+				<div class="navbar__bb text-right">
+					<a href="#" class="hidden-lg"><span class="icon-Map_view"></span></a>
+					<a href="#"><span class="icon-User"></span></a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row details-screen--padtop3">
+				<div class="col-md-8 col-xs-12">
+					<div class="hidden-xs hidden-sm details-screen__mintitle">
+						<p>Cyan Recoleta Hotel</p>
+						<div class="details-screen__separator"></div>
+					</div>
+					<div class="profile-screen__the-times">
+						<div class="details-mobile__times--first">
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									Entrada
+								</div>
+								<div class="side-box__time-out">
+									A partir de las 15:00 hs
+								</div>
 							</div>
-							<div class="side-box__time-out">
-								A partir de las 15:00 hs
+							<div class="side-box__separator--dotted"></div>
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									Salida
+								</div>
+								<div class="side-box__time-out">
+									A partir de las 15:00 hs
+								</div>
 							</div>
 						</div>
-						<div class="side-box__separator--dotted"></div>
+					</div>
+					<div class="">
 						<div class="side-box__time">
 							<div class="side-box__time-in">
-								Salida
+								Tipo de habitación
 							</div>
 							<div class="side-box__time-out">
-								A partir de las 15:00 hs
+								Elegida por el hotel
 							</div>
+						</div>
+						<div class="details-screen__separator--slim"></div>
+						<div class="no-padding side-box__time ">
+							<div class="side-box__time-in--middle">
+								Promocode
+							</div>
+							<div class="">
+								<form action="" class="material-form">
+									<div class="material-form__item material-form__item--slim">
+										<label for="code" class="material-form__label">Ingresá el código</label>
+										<input type="text" required="required" id="code" class="material-form__field">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="details-screen__separator--slim"></div>
+						<div class="hidden-lg hidden-sm">
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									Habitación 1 noche
+								</div>
+								<div class="side-box__time-out">
+									$270
+								</div>
+							</div>
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									Tasas e impuestos
+								</div>
+								<div class="side-box__time-out">
+									$41
+								</div>
+							</div>
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									A pagar en hotel
+								</div>
+								<div class="side-box__time-out">
+									$700
+								</div>
+							</div>
+							<div class="side-box__time">
+								<div class="side-box__time-in">
+									TOTAL
+								</div>
+								<div class="side-box__time-out">
+									$1301
+								</div>
+							</div>
+							<div class="details-screen__separator--slim"></div>
+						</div>
+						<div class="side-box__time">
+							<div class="side-box__time-in">
+								Información del cliente
+							</div>
+							<div class="side-box__time-out text--green ">
+								Nicolás Gonzalez
+							</div>
+						</div>
+						<div class="details-screen__separator--slim"></div>
+						<div class="side-box__time">
+							<div class="side-box__time-in">
+								Pago
+							</div>
+							<div class="side-box__time-out text--green ">
+								No tiene datos de pago
+							</div>
+						</div>
+						<div class="hidden-xs">
+							<a class="btn thh-button thh-button--login" href="#" role="button">Reservar</a>
 						</div>
 					</div>
 				</div>
-				<div class="">
-					<div class="side-box__time">
-						<div class="side-box__time-in">
-							Tipo de habitación
-						</div>
-						<div class="side-box__time-out">
-							Elegida por el hotel
-						</div>
+				<div class="col-md-4 side-box--details hidden-sm hidden-xs ">
+					<div class="side-box__img">
+						<img src="http://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/hotel/deluxe1500x930.jpg" class=" details-screen__img--small img-responsive">
 					</div>
-					<div class="details-screen__separator--slim"></div>
-					<div class="no-padding side-box__time ">
-						<div class="side-box__time-in--middle">
-							Promocode
-						</div>
-						<div class="">
-							<form action="" class="material-form">
-								<div class="material-form__item material-form__item--slim">
-									<label for="code" class="material-form__label">Ingresá el código</label>
-									<input type="text" required="required" id="code" class="material-form__field">
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="details-screen__separator--slim"></div>
 					<div class="side-box__time">
 						<div class="side-box__time-in">
 							Habitación 1 noche
@@ -104,34 +185,17 @@
 							$1301
 						</div>
 					</div>
-					<div class="details-screen__separator--slim"></div>
-					<div class="side-box__time">
-						<div class="side-box__time-in">
-							Información del cliente
-						</div>
-						<div class="side-box__time-out text--green ">
-							Nicolás Gonzalez
-						</div>
-					</div>
-					<div class="details-screen__separator--slim"></div>
-					<div class="side-box__time">
-						<div class="side-box__time-in">
-							Pago
-						</div>
-						<div class="side-box__time-out text--green ">
-							No tiene datos de pago
-						</div>
-					</div>
-					<a href="#">
-						<div class="details-mobile__main-button text-center">
-							Ingresar datos de pago
-						</div>
-					</a>
 				</div>
 			</div>
+		</div>
+		<div class="hidden-lg hidden-sm">
+			<a href="#">
+				<div class="details-mobile__main-button text-center">
+					Reservar
+				</div>
+			</a>
 		</div>
 	</div>
 	<script src="js/app.js" charset="utf-8"></script>
 </body>
-
 </html>
