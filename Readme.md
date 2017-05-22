@@ -1,5 +1,6 @@
-# HTML Starterkit with Bower and Gulp (with Sass)
-This starterkit was developed for easy setting up small test environments with Bower and Gulp. I use this kit when trying new stuff in the JS-world or testing out random APIs.
+# Tuhotelhoy
+Maquetado de Tuhotelhoy. Por facilidad usé: GULP, SASS, BOWER (deprecated) & Bootstap 
+- /public html / c
 
 ## Install dependencies
 
